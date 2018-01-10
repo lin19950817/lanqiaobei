@@ -5,7 +5,7 @@ public class problem1 {
 	}
 
 	private int SumOfFactors(int number) {
-		int i = 1, half = number / 2;
+		int i = 1, half = number >> 1;
 		int sum = 1; // 1为任何数质因子
 
 		while (++i <= half) {

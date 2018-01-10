@@ -9,10 +9,10 @@ public class problem2 {
 		int Year=1999;//1999年
 		while(!(Year%100==99&&0==week%7)){
 			if((0==++Year%100&&0==Year%400)||(0!=Year%100&&0==Year%4)){	//如果为闰年
-				week+=2;
+				week+=2;	//366%7==2
 			}
 			else{
-				week++;
+				week++;	//365%7==1
 			}
 		}
 		System.out.println(Year);
