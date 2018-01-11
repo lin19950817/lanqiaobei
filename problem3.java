@@ -12,27 +12,32 @@ public class problem3 {
 	int sum = 0;	//统计种类
 	
 	public void Problem() {
-//		for (int a = 1; a < 10; a++) {
-//			for (int b = 1; b < 10; b++) {
-//				for (int c = 1; c < 10; c++) {
-//					for (int d = 1; d < 10; d++) {
-//						for (int e = 1; e < 10; e++) {
-//							if ((a * 10 + b) * (c * 100 + d * 10 + e) == (a * 100 + d * 10 + b) * (c * 10 + e) && a != b
-//									&& a != c && a != d && a != e && b != c && b != d && b != e && c != d && c != e
-//									&& d != e)
-//								sum++;
-//						}
-//					}
-//				}
-//			}
-//		}
-
-		
+		//方法1
+		function1();
+		System.out.println(sum);
+		//方法2
 		digui(0);
 		System.out.println(sum);
 	}
+	
+	private void function1(){
+		for (int a = 1; a < 10; a++) {
+			for (int b = 1; b < 10; b++) {
+				for (int c = 1; c < 10; c++) {
+					for (int d = 1; d < 10; d++) {
+						for (int e = 1; e < 10; e++) {
+							if ((a * 10 + b) * (c * 100 + d * 10 + e) == (a * 100 + d * 10 + b) * (c * 10 + e) && a != b
+									&& a != c && a != d && a != e && b != c && b != d && b != e && c != d && c != e
+									&& d != e)
+								sum++;
+						}
+					}
+				}
+			}
+		}
+	}
 
-	public void digui(int step){
+	private void digui(int step){
 		if(step<=4){
 			for (int i = 1; i < 10; i++) {
 				if (0 == book[i] && step < 5) { // 没有用到的数字
