@@ -44,7 +44,7 @@ public class problem3 {
 					book[i] = 1;
 					number[step] = i;
 					digui(step+1);
-					book[i] = 0; //
+					book[i] = 0; //取消标记
 				}
 				
 			}

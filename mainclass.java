@@ -9,9 +9,9 @@ public class mainclass {
 		// p2.GetProblem();
 		// p2.Problem();
 
-		// problem4 p3=new problem4();
-		// p3.Problem();
-
-		System.out.println((82.3 - 1.9) / 2.3 + "\n" + ((82.3 - 2.3) / 1.9));
+		 problem6 p3=new problem6();
+		 p3.Problem();
+		
+	
 	}
 }

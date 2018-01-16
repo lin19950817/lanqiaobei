@@ -7,7 +7,7 @@ public class problem2 {
 	public void Problem(){
 		int week=5;//周五
 		int Year=1999;//1999年
-		while(!(Year%100==99&&0==week%7)){
+		while(!(99==Year%100&&0==week%7)){
 			if((0==++Year%100&&0==Year%400)||(0!=Year%100&&0==Year%4)){	//如果为闰年
 				week+=2;	//366%7==2
 			}
