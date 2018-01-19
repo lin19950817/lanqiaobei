@@ -12,6 +12,7 @@ public class mainclass {
 		 problem6 p3=new problem6();
 		 p3.Problem();
 		
+		
 	
 	}
 }
